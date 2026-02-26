@@ -16,7 +16,9 @@ data/
 │   ├── COCO_val_retrieval.csv
 │   ├── COCO_val_negated_retrieval_llama3.1_rephrased_affneg_true.csv
 │   ├── synthetic_retrieval_v1.csv
-│   └── synthetic_retrieval_v2.csv
+│   ├── synthetic_retrieval_v2.csv
+│   ├── chexpert_binary_mcq.csv
+│   └── chexpert_binary_mcq_control.csv
 ├── videos/
 │   ├── msr_vtt_retrieval.csv
 │   ├── msr_vtt_retrieval_rephrased_llama.csv
@@ -43,8 +45,9 @@ Each CSV file includes either `image_path` or `filepath` columns. After download
    - Download videos from **[MediaFire link](https://www.mediafire.com/folder/h14iarbs62e7p/shared)**.
    - Update the `image_path` and `filepath` columns in the relevant CSV files.
 
-4. **Synthetic Dataset (Stable Diffusion)**
-   - The images corresponding to the synthetic dataset introduced in NegBench will be uploaded shortly. Check back for updates.
+4. **CheXpert Medical Dataset**
+   - Download images from the **[Kaggle link](https://www.kaggle.com/datasets/ashery/chexpert)**.
+   - Update the `image_path` columns in the relevant CSV files.
 
 ### Notes
 - Ensure that the paths in the CSV files are updated to reflect your local directory structure.
@@ -64,4 +67,4 @@ These datasets are constructed using the scripts in the `synthetic_datasets/fine
 
 ## Contact and Updates
 
-If you encounter any issues or need assistance, please reach out via GitHub issues or email. Stay tuned for updates regarding the release of additional synthetic datasets!
+If you encounter any issues or need assistance, please reach out via GitHub issues or email.
